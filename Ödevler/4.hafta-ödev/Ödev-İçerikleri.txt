@@ -1,0 +1,11 @@
+-Sitemiz en az 3 sayfadan oluşucak:
+-İlk kısım anasayfa olucak,
+-İkinci kısım Hakkımızda,
+-Üçüncü kısım İletişim olucak.
+-İsterseniz daha fazla sayfa ekleyebilirsiniz size kalmış.
+-Navbar kısmında ise :hover özelliğini kullanmanızı istiyoruz.
+-Anasayfada kutu oluşturup 
+resim ekleyebilir ve paragraf ile metin yazabilirsiniz.
+-Hakkımızdayı istediğiniz gibi yapabilirsiniz.
+-İletişim kısmında da en altta bir footer olması 
+gerekiyor(tüm hakaları saklıdır gibi bir şey yazabilirsiniz.)
