@@ -1,0 +1,146 @@
+/* tarayıcı değerlerini sıfırlama */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* menu */
+.menu{
+    display: flex; /* menu içindeki alt alta olan div elemanlarını yan yana getirme */
+    justify-content: space-between; /* yan yana gelen div elemanlarını başa ve sona hizalama */
+    align-items: center; /* div elemanlarını 60px lik yükseklikde ortalama */
+    height: 60px;
+    padding: 0 100px; /* div elemanlarına x ekseninde iç boşluk verme */
+    background-color: #07d3bb;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* menu divine gölgelendirme ekleme (rgba olarak yer alan renk kodunu ifade ediyor) */
+}
+.menu .logo{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    cursor: pointer;
+}
+.menu .menu-list a{
+    text-decoration: none; /* a etiketine otamatik olarak gelen alt çizgiyi kaldırma  */
+    color: white;
+    padding-left: 50px; /* sol taraftan iç boşluk verme */
+    font-size: 18px; 
+}
+
+.menu .menu-list a:hover{
+    text-decoration: none; /* a etiketine otamatik olarak gelen alt çizgiyi kaldırma  */
+    color: rgb(231, 231, 231);
+    padding-left: 50px; /* sol taraftan iç boşluk verme */
+    font-size: 18px; 
+}
+
+/* Footer stillendirmeleri */
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    background-color: #ff6426;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-text{
+    padding-top: 30px;
+    font-size:20px;
+}
+
+
+/* iletşim stillendirmeleri */
+
+.iletisim {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+ 
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea,
+#contact button[type="submit"] {
+    font: 500 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+ 
+#contact {
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 100px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+ 
+#contact h2 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+ 
+.form-control{
+    border: none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+ 
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+ 
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact textarea:hover {
+    -webkit-transition: border-color 0.4s ease-in-out;
+    -moz-transition: border-color 0.4s ease-in-out;
+    transition: border-color 0.4s ease-in-out;
+    border: 1px solid #aaa;
+}
+ 
+#contact textarea {
+    height: 120px;
+    max-width: 100%;
+    resize: none;
+}
+ 
+/* buton */
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #79A7A8;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+ 
+#contact button[type="submit"]:hover {
+    background: #355C7D;
+    transition: background-color 0.4s ease-in-out;
+}
+ 
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+ 
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}

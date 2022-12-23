@@ -1,0 +1,126 @@
+/* tarayıcı değerlerini sıfırlama */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* menu */
+.menu{
+    display: flex; /* menu içindeki alt alta olan div elemanlarını yan yana getirme */
+    justify-content: space-between; /* yan yana gelen div elemanlarını başa ve sona hizalama */
+    align-items: center; /* div elemanlarını 60px lik yükseklikde ortalama */
+    height: 60px;
+    padding: 0 0px; /* div elemanlarına x ekseninde iç boşluk verme */
+    background-color: #07d3bb;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* menu divine gölgelendirme ekleme (rgba olarak yer alan renk kodunu ifade ediyor) */
+}
+.menu .logo{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    cursor: pointer;
+}
+.menu .menu-list a{
+    text-decoration: none; /* a etiketine otamatik olarak gelen alt çizgiyi kaldırma  */
+    color: white;
+    padding-left: 50px; /* sol taraftan iç boşluk verme */
+    font-size: 18px; 
+}
+
+.menu .menu-list a:hover{
+    text-decoration: none; /* a etiketine otamatik olarak gelen alt çizgiyi kaldırma  */
+    color: rgb(231, 231, 231);
+    padding-left: 50px; /* sol taraftan iç boşluk verme */
+    font-size: 18px; 
+}
+
+
+/* image stillendirmeleri */
+
+.main-img{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* main-img divinin içindeki elemanı ortalama */
+    margin-top: 30px;
+}
+.main-img img{
+    width: 85%;
+    object-fit: cover; /* eklediğimiz görseli kendi boyutları dışında değerler verdiğimiz için görsel de bozulma oluyor. Bu özellik resmi belirlediğimiz yükseklik ve genişlikde düzenliyor. */
+    border-radius: 5px; /* resmin kenarlarını yuvarlama */ 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* img etiketine gölgelendirme ekleme (rgba olarak yer alan renk kodunu ifade ediyor) */
+}
+.main-img .image-text{
+    position: absolute; /* özellik ile elemanı farklı bir layer a taşıdık sonrasında top dan ve left den değerler vererek görsel içinde hizakadık*/
+    top: 50%;
+    left: 200px;
+    transform: translate(-0%, -50%);
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize; /* yazının ilk harflerini büyütme */ 
+    background-color: coral;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+/* cards stillendirmeleri */
+
+.cards {
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.cards h4{
+    font-size: 40px;
+    color: #2c3033;
+    line-height: 1.25;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    padding: 40px 0;
+}
+.card-back{
+    display: flex;
+}
+.cards .card{
+   display: flex;
+   flex-direction: column;
+   border: 1px solid #07d3bb;
+   width: 33%;
+   margin-right: 20px;
+   border-top-left-radius: 12px;
+   border-top-right-radius: 12px;
+}
+.cards .card img{
+    height: 320px;
+    border-radius: 12px;
+}   
+.cards .card > div{
+    padding: 30px;
+}   
+.cards .card h6{
+    font-size: 24px;
+    font-weight: 700px;
+    margin-bottom: 15px;
+}   
+.cards .card p{
+    font-family: "Lora",serif;
+    line-height: 1.7;
+    font-size: 15px;
+    margin-bottom: 0;
+    color: #555;
+    margin-bottom: 20px;
+}   
+.cards .card span{
+    color: #2c3033;
+    font-size: 15px;
+    color: #1d272f;
+    text-transform: capitalize;
+    font-family: "Lora",serif;
+    cursor: pointer;
+}
+.cards .card span:hover, .cards .card span:hover .icon{
+    color: #ff6426;
+}
